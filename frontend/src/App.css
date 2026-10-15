@@ -221,3 +221,103 @@ h2 {
     padding: 1.5rem;
   }
 }
+
+.site-header {
+  flex-wrap: wrap;
+}
+
+.site-header nav {
+  flex-wrap: wrap;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1.75rem;
+}
+
+.contact-links a,
+.site-footer a {
+  color: #a3e6c2;
+}
+
+.contact-links a:hover,
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.card-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.section-card {
+  margin-top: 1.5rem;
+}
+
+h3,
+h4 {
+  font-family: 'Manrope', sans-serif;
+  color: #e8edf5;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+h4 {
+  margin: 1.75rem 0 0;
+  font-size: 1rem;
+}
+
+.date {
+  color: #aebbd0;
+  font-size: 0.85rem;
+}
+
+.project-card > .organization {
+  margin: 0.5rem 0 1rem;
+  color: #a3e6c2;
+  font-size: 0.9rem;
+}
+
+.detail-list {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+  color: #aebbd0;
+  line-height: 1.8;
+}
+
+.detail-list li::marker {
+  color: #a3e6c2;
+}
+
+.subsection-heading {
+  margin-top: 2rem;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.profile-photo {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 1.5rem auto;
+  border: 3px solid #2b3749;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
