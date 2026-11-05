@@ -36,7 +36,25 @@ const languages: string[] = [
   'SQL',
 ]
 
+type ReportKind = 'bug' | 'feature'
+
+type Report = {
+  id: string
+  text: string
+  kind: ReportKind
+}
+
+
+
 function App() {
+  const sampleReport: Report = {
+    id: '1',
+    text: 'Navigation link is broken',
+    kind: 'bug',
+  }
+
+
+
   return (
     <main className="site">
       <header className="site-header">
@@ -249,6 +267,12 @@ function App() {
           </p>
         </div>
       </section>
+
+      <section className="report-board">
+        <h2>Bugs & Feature Requests</h2>
+        <p>{sampleReport.text} ({sampleReport.kind})</p>
+      </section>
+
 
       <footer className="site-footer">
         <p>Cole Amacker</p>
